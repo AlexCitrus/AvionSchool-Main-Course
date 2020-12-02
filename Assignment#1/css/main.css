@@ -1,0 +1,29 @@
+* {
+  background-image: url("bg.png");
+}
+
+#content,
+a {
+  font-family: "Nerko One", cursive;
+  text-align: center;
+}
+
+a {
+  display: block;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  font-family: "Architects Daughter", cursive;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Major Mono Display", monospace;
+}
