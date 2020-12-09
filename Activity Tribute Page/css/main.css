@@ -84,7 +84,7 @@ button:hover {
 }
 
 #image {
-  position: relative;
+  position: static;
   top: 20%;
   right: 30%;
 }
@@ -102,7 +102,7 @@ button:hover {
   height: 70%;
   top: 25%;
   left: 40%;
-  position: absolute;
+  position: static;
   color: black;
 }
 
@@ -118,6 +118,7 @@ h1 {
 #albums {
   width: 85%;
   border: 10px solid #402e32;
+  position: static;
 }
 
 #About {
