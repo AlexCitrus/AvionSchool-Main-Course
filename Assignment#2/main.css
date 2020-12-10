@@ -1,29 +1,44 @@
-.chessboard {
-  border: 2px solid black;
-  box-sizing: content-box;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  height: 40vw;
-  margin-top: 100px;
-  margin-left: 450px;
-  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.2vw;
   width: 40vw;
+  height: 40vw;
 }
 
-.row {
+.white {
+  /* background-color:white; */
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../../assets/white-marble.jpg");
+  filter: brightness(1.1);
+}
+
+.black {
+  /* background-color:black; */
+  background-position: center;
+  background-size: cover;
+  /* background-image: url('../../../assets/green-marble.jpg') */
+  background-image: url("../../../assets/dark-wood.jpg");
+  filter: brightness(1.8);
+}
+
+.chess-box {
+  /* font-size: 5rem; */
+  font-size: 3vw;
+  /* text-align: center; */
   display: flex;
-  flex: 1;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-
-.white-box {
-  background: url("white.jpg");
-  background-size: cover;
-  flex: 1;
-}
-
-.black-box {
-  background: url("black.jpg");
-  background-size: cover;
-  flex: 1;
-}
+/* Chess pieces */
